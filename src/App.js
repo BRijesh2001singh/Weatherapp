@@ -20,8 +20,9 @@ function App() {
     }
   }
 
-  var iconcode = data.main ? data.weather[0].icon : 0;
+  var iconcode = data.main ? data.weather[0].icon : null;
   var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+  console.log(iconurl);
   let currweather = data.main ? data.weather[0].main : null;
   let currweatherimg;
   console.log(iconcode);
@@ -94,7 +95,7 @@ function App() {
             {data.main ? <p id="ic">{data.weather[0].main}</p> : null}
           </div>
           <div className='weather-icon' >
-            <img id="himage" className='icon' src={iconurl} alt="iicon"></img>
+            <img className='icon himage' src={iconurl} alt="" ></img>
           </div>
         </div>
         <div className="bottom">
