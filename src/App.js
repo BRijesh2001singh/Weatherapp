@@ -61,7 +61,9 @@ function App() {
       case "Snow":
         currweatherimg = snowimg;
         break;
-
+      case "Thunderstorm":
+        currweatherimg = thunderimg;
+        break;
       default:
         currweatherimg = clear;
         break;
