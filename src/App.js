@@ -73,10 +73,11 @@ function App() {
   return (
     <div className="app" style={{
       content: "",
-      position: "relative",
-      top: "5px",
+      position: "fixed",
       width: "100%",
       height: "100%",
+      maxHeight: "auto",
+      maxWidth: "auto",
       backgroundImage: `url(${currweatherimg})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
